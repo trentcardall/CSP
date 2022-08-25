@@ -3,7 +3,7 @@
     
         "post0": {
             "title": "Terminal Commands",
-            "content": "mkdir: make new directory cd:change directory pwd: lets you know what directory you are currently in ls: lists files in directory clear: clear terminal, clean it up when it gets messy echo: echos whatever phrase you put in, can be used to organize outputs ls -a: list hidden files ls -al: lists files in long format, shows certain properties about them which you can only see in terminal. code: code file in VSCode .",
+            "content": "mkdir: make new directory . cd:change directory . pwd: lets you know what directory you are currently in . ls: lists files in directory . clear: clear terminal, clean it up when it gets messy . echo: echos whatever phrase you put in, can be used to organize outputs . ls -a: list hidden files . ls -al: lists files in long format, shows certain properties about them which you can only see in terminal. . code: code file in VSCode .",
             "url": "https://trentcardall.github.io/cuddly-succotash/markdown/2022/08/25/Terminal-Commands.html",
             "relUrl": "/markdown/2022/08/25/Terminal-Commands.html",
             "date": " • Aug 25, 2022"
