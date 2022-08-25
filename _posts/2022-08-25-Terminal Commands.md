@@ -6,20 +6,20 @@ categories: [markdown]
 title: Terminal Commands
 ---
 
-`mkdir`: make new directory
+-`mkdir`: make new directory
 
-`cd`:change directory
+-`cd`:change directory
 
-`pwd`: lets you know what directory you are currently in
+-`pwd`: lets you know what directory you are currently in
 
-`ls`: lists files in directory
+-`ls`: lists files in directory
 
-`clear`: clear terminal, clean it up when it gets messy
+-`clear`: clear terminal, clean it up when it gets messy
 
-`echo`: echos whatever phrase you put in, can be used to organize outputs
+-`echo`: echos whatever phrase you put in, can be used to organize outputs
 
-`ls -a`: list hidden files
+-`ls -a`: list hidden files
 
-`ls -al`: lists files in long format, shows certain properties about them which you can only see in terminal.
+-`ls -al`: lists files in long format, shows certain properties about them which you can only see in terminal.
 
-`code`: code file in VSCode
+-`code`: code file in VSCode
