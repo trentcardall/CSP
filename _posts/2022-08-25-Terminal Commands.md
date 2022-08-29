@@ -6,6 +6,8 @@ categories: [markdown]
 title: Terminal Commands
 ---
 
+![]({{ site.baseurl }}/images/photo-1521790361543-f645cf042ec4.jpeg "Typing image")
+
 -`mkdir`: make new directory
 
 -`cd`:change directory
