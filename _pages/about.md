@@ -4,8 +4,6 @@ title: About Me
 permalink: /about/
 ---
 
-This website is powered by **[fastpages](https://github.com/fastai/fastpages)** [^1].
+![]({{ site.baseurl }}/images/IMG_6705.jpg)
 
-
-
-[^1]:a blogging platform that natively supports Jupyter notebooks in addition to other formats.
+Hi! My name is Trent Cardall and I am currently a student in AP Computer Science Principles. I do not know a whole lot about coding right now but I have already learned so much in the short time I have been in this class. I am taking this class because I want to see if I can potentially have a future in computer science, a field that will only get bigger from now on.
