@@ -1,4 +1,4 @@
-$high-emph: rgba(rgb(15, 7, 7), 0.87); // Colour 1 -> White
+$high-emph: rgba(rgb(255, 255, 255), 0.87); // Colour 1 -> White
 $med-emph: rgba(white, 0.69); //Noice
 $low-emph: rgba(white, 0.38);
 $dark-grey : #121212; // Colour 2
@@ -14,14 +14,18 @@ canvas {
 }
 
 table th {
-    background-color: $overlay;
+    background-color: $dark-grey;
     border-color: $overlay-light;
     color: $high-emph;
 }
 
 table td {
-    background-color: $dark-grey;
+    background-color: slategray;
     border-color: $overlay-light;
     color: $med-emph;
+}
+
+body {
+    background-color: slategray;
 }
 
