@@ -9,29 +9,29 @@ title: JavaScript Quiz
 ## Planning
 I decided to make my quiz about basketball, and have the questions and answers go as follows:
 
-1. What year was basketball invented?
-    A. 1642
-    B. 1864
-    C. 1891 (correct)
-    D. 1492
+1. What year was basketball invented?   
+    A. 1642   
+    B. 1864   
+    C. 1891 (correct)   
+    D. 1492   
 
-2. Which of these players is LeBron James?
-    A. Picture of Michael Jordan
-    B. Picture of LeBron James (correct)
-    C. Picture of Tom Brady
-    D. Picture of Giannis Antetokounmpo
+2. Which of these players is LeBron James?   
+    A. Picture of Michael Jordan   
+    B. Picture of LeBron James (correct)   
+    C. Picture of Tom Brady   
+    D. Picture of Giannis Antetokounmpo   
 
-3. Which team won the championship in 2022?
-    A. Phoenix Suns (+ logo)
-    B. Boston Celtics (+ logo)
-    C. Dallas Mavericks (+ logo)
-    D. Golden State Warriors (+ logo) (correct)
+3. Which team won the championship in 2022?   
+    A. Phoenix Suns (+ logo)   
+    B. Boston Celtics (+ logo)   
+    C. Dallas Mavericks (+ logo)   
+    D. Golden State Warriors (+ logo) (correct)   
 
-4. Who won the MVP in 2022?
-    A. Luka Doncic
-    B. LeBron James
-    C. Stephen Curry
-    D. Nikola Jokic (correct)
+4. Who won the MVP in 2022?   
+    A. Luka Doncic   
+    B. LeBron James   
+    C. Stephen Curry   
+    D. Nikola Jokic (correct)    
 
 Each correct answer will take the user to the next question. Each wrong answer will take them to an incorrect screen and ask them to try again.
 
