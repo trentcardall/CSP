@@ -40,7 +40,7 @@ In order to make my game more original, I decided to have wrong answers take you
 
 I also decided to have a screen towards the beginning which would ask the player for their name and welcome them to the quiz.   
 
-I tried to make the 4th question free response, where you could type in any answer and try to get the right one, and after some research was able to find the code to do that. However, the website did not seem to recognize one of the functions I was trying to run, and after changing some things I was not able to fix it. I decided to settle by creating a dropdown system with multiple options to still maintain some originality. After running into similar issues, I settled for traditional multiple choice.  
+I tried to make the 4th question free response, where you could type in any answer and try to get the right one, and after some research was able to find the code to do that. However, the website did not seem to recognize one of the functions I was trying to run, and after changing some things I was not able to fix it. I decided to settle by creating a dropdown system with multiple options to still maintain some originality. After running into similar issues, I settled for traditional multiple choice.
 
 I decided to also add a screen at the end which congratulated the player using the same name they entered at the beginning of the quiz and giving them the option to either play again or view my fastpages site.
 
