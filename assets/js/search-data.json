@@ -172,6 +172,22 @@
   
 
   
+      ,"page3": {
+          "title": "JavaScript",
+          "content": "Links coming soon .",
+          "url": "https://trentcardall.github.io/cuddly-succotash/javascript/",
+          "relUrl": "/javascript/",
+          "date": ""
+      }
+      
+  
+
+  
+  
+
+  
+
+  
   
 
   
@@ -180,18 +196,13 @@
   
 
   
-
-  
   
 
   
   
 
   
-  
-
-  
-      ,"page10": {
+      ,"page11": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://trentcardall.github.io/cuddly-succotash/robots.txt",
