@@ -82,7 +82,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      3 min read
+      2 min read
     
 </span></p>
 
@@ -231,8 +231,10 @@ string ; {"category":"Name","value":"Trent","info":"Born on March 9, 2005"}
 <span class="kd">function</span> <span class="nx">person</span><span class="p">(</span><span class="nx">basic</span><span class="p">,</span> <span class="nx">additional</span><span class="p">){</span>
     <span class="k">this</span><span class="p">.</span><span class="nx">basic</span> <span class="o">=</span> <span class="nx">basic</span>
     <span class="k">this</span><span class="p">.</span><span class="nx">additional</span> <span class="o">=</span> <span class="nx">additional</span>
-    <span class="k">this</span><span class="p">.</span><span class="nx">person</span> <span class="o">=</span> <span class="p">[</span><span class="nx">basic</span><span class="p">,</span> <span class="nx">additional</span><span class="p">]</span>
-    <span class="k">this</span><span class="p">.</span><span class="nx">additional</span><span class="p">.</span><span class="nx">forEach</span><span class="p">(</span><span class="nx">more</span> <span class="p">=&gt;</span> <span class="p">{</span> <span class="k">this</span><span class="p">.</span><span class="nx">person</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">additional</span><span class="p">)</span> <span class="p">})</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">person</span> <span class="o">=</span> <span class="p">[</span><span class="nx">basic</span><span class="p">]</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">additional</span><span class="p">.</span><span class="nx">forEach</span><span class="p">(</span><span class="nx">additional</span> <span class="p">=&gt;</span> <span class="p">{</span> <span class="k">this</span><span class="p">.</span><span class="nx">person</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">additional</span><span class="p">)</span> <span class="p">})</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">json</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">person</span><span class="p">.</span><span class="nx">forEach</span><span class="p">(</span><span class="nx">attribute</span> <span class="p">=&gt;</span> <span class="k">this</span><span class="p">.</span><span class="nx">json</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">attribute</span><span class="p">.</span><span class="nx">toJSON</span><span class="p">()));</span>
 <span class="p">}</span>
 
 <span class="nx">me</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">person</span><span class="p">(</span><span class="nx">basic</span><span class="p">,</span> <span class="nx">additional</span><span class="p">)</span>
@@ -257,79 +259,22 @@ string ; {"category":"Name","value":"Trent","info":"Born on March 9, 2005"}
     category: 'Name',
     value: 'Trent',
     info: 'Born on March 9, 2005' },
-  [ attribute { category: 'Age', value: '17', info: 'Senior in high school' },
-    attribute {
-      category: 'Hobbies',
-      value: 'Playing music, lacrosse, surfing',
-      info: 'Plays both drums and guitar' },
-    attribute {
-      category: 'Pets',
-      value: 'Dog',
-      info: 'Named Oscar, owned for about 5 years' },
-    attribute { category: 'Class', value: 'APCSP', info: 'Period 3' } ],
-  [ attribute { category: 'Age', value: '17', info: 'Senior in high school' },
-    attribute {
-      category: 'Hobbies',
-      value: 'Playing music, lacrosse, surfing',
-      info: 'Plays both drums and guitar' },
-    attribute {
-      category: 'Pets',
-      value: 'Dog',
-      info: 'Named Oscar, owned for about 5 years' },
-    attribute { category: 'Class', value: 'APCSP', info: 'Period 3' } ],
-  [ attribute { category: 'Age', value: '17', info: 'Senior in high school' },
-    attribute {
-      category: 'Hobbies',
-      value: 'Playing music, lacrosse, surfing',
-      info: 'Plays both drums and guitar' },
-    attribute {
-      category: 'Pets',
-      value: 'Dog',
-      info: 'Named Oscar, owned for about 5 years' },
-    attribute { category: 'Class', value: 'APCSP', info: 'Period 3' } ],
-  [ attribute { category: 'Age', value: '17', info: 'Senior in high school' },
-    attribute {
-      category: 'Hobbies',
-      value: 'Playing music, lacrosse, surfing',
-      info: 'Plays both drums and guitar' },
-    attribute {
-      category: 'Pets',
-      value: 'Dog',
-      info: 'Named Oscar, owned for about 5 years' },
-    attribute { category: 'Class', value: 'APCSP', info: 'Period 3' } ],
-  [ attribute { category: 'Age', value: '17', info: 'Senior in high school' },
-    attribute {
-      category: 'Hobbies',
-      value: 'Playing music, lacrosse, surfing',
-      info: 'Plays both drums and guitar' },
-    attribute {
-      category: 'Pets',
-      value: 'Dog',
-      info: 'Named Oscar, owned for about 5 years' },
-    attribute { category: 'Class', value: 'APCSP', info: 'Period 3' } ] ]
+  attribute { category: 'Age', value: '17', info: 'Senior in high school' },
+  attribute {
+    category: 'Hobbies',
+    value: 'Playing music, lacrosse, surfing',
+    info: 'Plays both drums and guitar' },
+  attribute {
+    category: 'Pets',
+    value: 'Dog',
+    info: 'Named Oscar, owned for about 5 years' },
+  attribute { category: 'Class', value: 'APCSP', info: 'Period 3' } ]
 undefined ; undefined
+string ; {"category":"Name","value":"Trent","info":"Born on March 9, 2005"}
+object ; { category: 'Name',
+  value: 'Trent',
+  info: 'Born on March 9, 2005' }
 </pre>
-</div>
-</div>
-
-<div class="output_area">
-
-<div class="output_subarea output_text output_error">
-<pre>
-evalmachine.&lt;anonymous&gt;:19
-logItType(me.json[0]);
-                 ^
-
-TypeError: Cannot read property '0' of undefined
-    at evalmachine.&lt;anonymous&gt;:19:18
-    at Script.runInThisContext (vm.js:96:20)
-    at Object.runInThisContext (vm.js:303:38)
-    at run ([eval]:1020:15)
-    at onRunRequest ([eval]:864:18)
-    at onMessage ([eval]:828:13)
-    at process.emit (events.js:182:13)
-    at emit (internal/child_process.js:812:12)
-    at process._tickCallback (internal/process/next_tick.js:63:19)</pre>
 </div>
 </div>
 
@@ -414,33 +359,27 @@ TypeError: Cannot read property '0' of undefined
 </tr>
 <tr></tr>
 <tr>
-<td>undefined</td>
-<td>undefined</td>
-<td>undefined</td>
+<td>Age</td>
+<td>17</td>
+<td>Senior in high school</td>
 </tr>
 <tr></tr>
 <tr>
-<td>undefined</td>
-<td>undefined</td>
-<td>undefined</td>
+<td>Hobbies</td>
+<td>Playing music, lacrosse, surfing</td>
+<td>Plays both drums and guitar</td>
 </tr>
 <tr></tr>
 <tr>
-<td>undefined</td>
-<td>undefined</td>
-<td>undefined</td>
+<td>Pets</td>
+<td>Dog</td>
+<td>Named Oscar, owned for about 5 years</td>
 </tr>
 <tr></tr>
 <tr>
-<td>undefined</td>
-<td>undefined</td>
-<td>undefined</td>
-</tr>
-<tr></tr>
-<tr>
-<td>undefined</td>
-<td>undefined</td>
-<td>undefined</td>
+<td>Class</td>
+<td>APCSP</td>
+<td>Period 3</td>
 </tr>
 <tr>&lt;/table&gt;&lt;/div&gt;
 &lt;/div&gt;
