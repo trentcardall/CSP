@@ -247,9 +247,20 @@
   
 
   
+      ,"page2": {
+          "title": "API",
+          "content": "Live Weather API .",
+          "url": "https://trentcardall.github.io/cuddly-succotash/api/",
+          "relUrl": "/api/",
+          "date": ""
+      }
+      
+  
 
   
-      ,"page3": {
+
+  
+      ,"page4": {
           "title": "JavaScript",
           "content": "Links: . JavaScript notebook . HTML Table .",
           "url": "https://trentcardall.github.io/cuddly-succotash/javascript/",
@@ -281,7 +292,7 @@
   
 
   
-      ,"page12": {
+      ,"page13": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://trentcardall.github.io/cuddly-succotash/robots.txt",
