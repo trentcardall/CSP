@@ -293,7 +293,7 @@
   
       ,"page2": {
           "title": "API",
-          "content": "Live Weather API .",
+          "content": ". Live Weather API .",
           "url": "https://trentcardall.github.io/cuddly-succotash/api/",
           "relUrl": "/api/",
           "date": ""
