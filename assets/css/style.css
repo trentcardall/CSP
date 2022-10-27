@@ -435,6 +435,6 @@ table th { background-color: #121212; border-color: #333333; color: rgba(255, 25
 
 table td { background-color: slategray; border-color: #333333; color: rgba(255, 255, 255, 0.69); }
 
-body { background-color: slategray; }
+body { background: slategray; }
 
 /*# sourceMappingURL=style.css.map */
