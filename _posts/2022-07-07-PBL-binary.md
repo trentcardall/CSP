@@ -27,6 +27,7 @@ tags: [html, liquid, javascript]
                 <th>Octal</th>
                 <th>Hexadecimal</th>
                 <th>Decimal</th>
+                <th>Ternary (base 3)</th>
                 <th>Minus</th>
             </tr>
             <tr>
@@ -35,6 +36,7 @@ tags: [html, liquid, javascript]
                 <td id="octal">0</td>
                 <td id="hexadecimal">0</td>
                 <td id="decimal">0</td>
+                <td id="ternary">0</td>
                 <td><button type="button" id="sub1" onclick="add(-1)">-1</button></td>
             </tr>
             </table>
@@ -87,6 +89,8 @@ tags: [html, liquid, javascript]
         document.getElementById('hexadecimal').innerHTML = parseInt(binary, 2).toString(16);
         // Decimal conversion
         document.getElementById('decimal').innerHTML = parseInt(binary, 2).toString();
+        // Ternary (base 3) conversion
+        document.getElementById('ternary').innerHTML = parseInt(binary,2).toString(3);
     }
     //
     function decimal_2_base(decimal, base) {
