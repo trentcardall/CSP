@@ -81,7 +81,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      7 min read
+      10 min read
     
 </span></p>
 
@@ -297,6 +297,35 @@ window.onload = wrap_img;
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Most liked 17
+4 If at first you don't succeed; call it version 1.0. 
+ haha: 17 
+ boohoo: 3 
+
+Most jeered 6
+10 There are 10 types of people in the world: those who understand binary, and those who don’t. 
+ haha: 12 
+ boohoo: 6 
+
+Random joke
+17 An SQL statement walks into a bar and sees two tables. It approaches, and asks may I join you? 
+ haha: 9 
+ boohoo: 2 
+
+Jokes Count: 18
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
     
 
@@ -465,6 +494,146 @@ window.onload = wrap_img;
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">KeyboardInterrupt</span>                         Traceback (most recent call last)
+<span class="ansi-green-intense-fg ansi-bold">/Users/Trent/vscode/cuddly-succotash/_notebooks/2022-10-17-PBL-webapi_tutorial.ipynb Cell 7</span> in <span class="ansi-cyan-fg">&lt;cell line: 8&gt;</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell:/Users/Trent/vscode/cuddly-succotash/_notebooks/2022-10-17-PBL-webapi_tutorial.ipynb#W6sZmlsZQ%3D%3D?line=4'&gt;5&lt;/a&gt;</span> responses = []  # responses list
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell:/Users/Trent/vscode/cuddly-succotash/_notebooks/2022-10-17-PBL-webapi_tutorial.ipynb#W6sZmlsZQ%3D%3D?line=6'&gt;7&lt;/a&gt;</span> # Get the count of jokes on server
+<span class="ansi-green-fg">----&gt; &lt;a href='vscode-notebook-cell:/Users/Trent/vscode/cuddly-succotash/_notebooks/2022-10-17-PBL-webapi_tutorial.ipynb#W6sZmlsZQ%3D%3D?line=7'&gt;8&lt;/a&gt;</span> count_response = requests.get(url+"count")
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell:/Users/Trent/vscode/cuddly-succotash/_notebooks/2022-10-17-PBL-webapi_tutorial.ipynb#W6sZmlsZQ%3D%3D?line=8'&gt;9&lt;/a&gt;</span> count_json = count_response.json()
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell:/Users/Trent/vscode/cuddly-succotash/_notebooks/2022-10-17-PBL-webapi_tutorial.ipynb#W6sZmlsZQ%3D%3D?line=9'&gt;10&lt;/a&gt;</span> count = count_json['count']
+
+File <span class="ansi-green-fg">/opt/anaconda3/lib/python3.9/site-packages/requests/api.py:75</span>, in <span class="ansi-cyan-fg">get</span><span class="ansi-blue-fg">(url, params, **kwargs)</span>
+<span class="ansi-green-intense-fg ansi-bold">     64</span> def get(url, params=None, **kwargs):
+<span class="ansi-green-intense-fg ansi-bold">     65</span>     r"""Sends a GET request.
+<span class="ansi-green-intense-fg ansi-bold">     66</span> 
+<span class="ansi-green-intense-fg ansi-bold">     67</span>     :param url: URL for the new :class:`Request` object.
+<span class="ansi-green-fg">   (...)</span>
+<span class="ansi-green-intense-fg ansi-bold">     72</span>     :rtype: requests.Response
+<span class="ansi-green-intense-fg ansi-bold">     73</span>     """
+<span class="ansi-green-fg">---&gt; 75</span>     return request('get', url, params=params, **kwargs)
+
+File <span class="ansi-green-fg">/opt/anaconda3/lib/python3.9/site-packages/requests/api.py:61</span>, in <span class="ansi-cyan-fg">request</span><span class="ansi-blue-fg">(method, url, **kwargs)</span>
+<span class="ansi-green-intense-fg ansi-bold">     57</span> # By using the 'with' statement we are sure the session is closed, thus we
+<span class="ansi-green-intense-fg ansi-bold">     58</span> # avoid leaving sockets open which can trigger a ResourceWarning in some
+<span class="ansi-green-intense-fg ansi-bold">     59</span> # cases, and look like a memory leak in others.
+<span class="ansi-green-intense-fg ansi-bold">     60</span> with sessions.Session() as session:
+<span class="ansi-green-fg">---&gt; 61</span>     return session.request(method=method, url=url, **kwargs)
+
+File <span class="ansi-green-fg">/opt/anaconda3/lib/python3.9/site-packages/requests/sessions.py:529</span>, in <span class="ansi-cyan-fg">Session.request</span><span class="ansi-blue-fg">(self, method, url, params, data, headers, cookies, files, auth, timeout, allow_redirects, proxies, hooks, stream, verify, cert, json)</span>
+<span class="ansi-green-intense-fg ansi-bold">    524</span> send_kwargs = {
+<span class="ansi-green-intense-fg ansi-bold">    525</span>     'timeout': timeout,
+<span class="ansi-green-intense-fg ansi-bold">    526</span>     'allow_redirects': allow_redirects,
+<span class="ansi-green-intense-fg ansi-bold">    527</span> }
+<span class="ansi-green-intense-fg ansi-bold">    528</span> send_kwargs.update(settings)
+<span class="ansi-green-fg">--&gt; 529</span> resp = self.send(prep, **send_kwargs)
+<span class="ansi-green-intense-fg ansi-bold">    531</span> return resp
+
+File <span class="ansi-green-fg">/opt/anaconda3/lib/python3.9/site-packages/requests/sessions.py:645</span>, in <span class="ansi-cyan-fg">Session.send</span><span class="ansi-blue-fg">(self, request, **kwargs)</span>
+<span class="ansi-green-intense-fg ansi-bold">    642</span> start = preferred_clock()
+<span class="ansi-green-intense-fg ansi-bold">    644</span> # Send the request
+<span class="ansi-green-fg">--&gt; 645</span> r = adapter.send(request, **kwargs)
+<span class="ansi-green-intense-fg ansi-bold">    647</span> # Total elapsed time of the request (approximately)
+<span class="ansi-green-intense-fg ansi-bold">    648</span> elapsed = preferred_clock() - start
+
+File <span class="ansi-green-fg">/opt/anaconda3/lib/python3.9/site-packages/requests/adapters.py:440</span>, in <span class="ansi-cyan-fg">HTTPAdapter.send</span><span class="ansi-blue-fg">(self, request, stream, timeout, verify, cert, proxies)</span>
+<span class="ansi-green-intense-fg ansi-bold">    438</span> try:
+<span class="ansi-green-intense-fg ansi-bold">    439</span>     if not chunked:
+<span class="ansi-green-fg">--&gt; 440</span>         resp = conn.urlopen(
+<span class="ansi-green-intense-fg ansi-bold">    441</span>             method=request.method,
+<span class="ansi-green-intense-fg ansi-bold">    442</span>             url=url,
+<span class="ansi-green-intense-fg ansi-bold">    443</span>             body=request.body,
+<span class="ansi-green-intense-fg ansi-bold">    444</span>             headers=request.headers,
+<span class="ansi-green-intense-fg ansi-bold">    445</span>             redirect=False,
+<span class="ansi-green-intense-fg ansi-bold">    446</span>             assert_same_host=False,
+<span class="ansi-green-intense-fg ansi-bold">    447</span>             preload_content=False,
+<span class="ansi-green-intense-fg ansi-bold">    448</span>             decode_content=False,
+<span class="ansi-green-intense-fg ansi-bold">    449</span>             retries=self.max_retries,
+<span class="ansi-green-intense-fg ansi-bold">    450</span>             timeout=timeout
+<span class="ansi-green-intense-fg ansi-bold">    451</span>         )
+<span class="ansi-green-intense-fg ansi-bold">    453</span>     # Send the request.
+<span class="ansi-green-intense-fg ansi-bold">    454</span>     else:
+<span class="ansi-green-intense-fg ansi-bold">    455</span>         if hasattr(conn, 'proxy_pool'):
+
+File <span class="ansi-green-fg">/opt/anaconda3/lib/python3.9/site-packages/urllib3/connectionpool.py:703</span>, in <span class="ansi-cyan-fg">HTTPConnectionPool.urlopen</span><span class="ansi-blue-fg">(self, method, url, body, headers, retries, redirect, assert_same_host, timeout, pool_timeout, release_conn, chunked, body_pos, **response_kw)</span>
+<span class="ansi-green-intense-fg ansi-bold">    700</span>     self._prepare_proxy(conn)
+<span class="ansi-green-intense-fg ansi-bold">    702</span> # Make the request on the httplib connection object.
+<span class="ansi-green-fg">--&gt; 703</span> httplib_response = self._make_request(
+<span class="ansi-green-intense-fg ansi-bold">    704</span>     conn,
+<span class="ansi-green-intense-fg ansi-bold">    705</span>     method,
+<span class="ansi-green-intense-fg ansi-bold">    706</span>     url,
+<span class="ansi-green-intense-fg ansi-bold">    707</span>     timeout=timeout_obj,
+<span class="ansi-green-intense-fg ansi-bold">    708</span>     body=body,
+<span class="ansi-green-intense-fg ansi-bold">    709</span>     headers=headers,
+<span class="ansi-green-intense-fg ansi-bold">    710</span>     chunked=chunked,
+<span class="ansi-green-intense-fg ansi-bold">    711</span> )
+<span class="ansi-green-intense-fg ansi-bold">    713</span> # If we're going to release the connection in ``finally:``, then
+<span class="ansi-green-intense-fg ansi-bold">    714</span> # the response doesn't need to know about the connection. Otherwise
+<span class="ansi-green-intense-fg ansi-bold">    715</span> # it will also try to release it and we'll have a double-release
+<span class="ansi-green-intense-fg ansi-bold">    716</span> # mess.
+<span class="ansi-green-intense-fg ansi-bold">    717</span> response_conn = conn if not release_conn else None
+
+File <span class="ansi-green-fg">/opt/anaconda3/lib/python3.9/site-packages/urllib3/connectionpool.py:386</span>, in <span class="ansi-cyan-fg">HTTPConnectionPool._make_request</span><span class="ansi-blue-fg">(self, conn, method, url, timeout, chunked, **httplib_request_kw)</span>
+<span class="ansi-green-intense-fg ansi-bold">    384</span> # Trigger any extra validation we need to do.
+<span class="ansi-green-intense-fg ansi-bold">    385</span> try:
+<span class="ansi-green-fg">--&gt; 386</span>     self._validate_conn(conn)
+<span class="ansi-green-intense-fg ansi-bold">    387</span> except (SocketTimeout, BaseSSLError) as e:
+<span class="ansi-green-intense-fg ansi-bold">    388</span>     # Py2 raises this as a BaseSSLError, Py3 raises it as socket timeout.
+<span class="ansi-green-intense-fg ansi-bold">    389</span>     self._raise_timeout(err=e, url=url, timeout_value=conn.timeout)
+
+File <span class="ansi-green-fg">/opt/anaconda3/lib/python3.9/site-packages/urllib3/connectionpool.py:1040</span>, in <span class="ansi-cyan-fg">HTTPSConnectionPool._validate_conn</span><span class="ansi-blue-fg">(self, conn)</span>
+<span class="ansi-green-intense-fg ansi-bold">   1038</span> # Force connect early to allow us to validate the connection.
+<span class="ansi-green-intense-fg ansi-bold">   1039</span> if not getattr(conn, "sock", None):  # AppEngine might not have  `.sock`
+<span class="ansi-green-fg">-&gt; 1040</span>     conn.connect()
+<span class="ansi-green-intense-fg ansi-bold">   1042</span> if not conn.is_verified:
+<span class="ansi-green-intense-fg ansi-bold">   1043</span>     warnings.warn(
+<span class="ansi-green-intense-fg ansi-bold">   1044</span>         (
+<span class="ansi-green-intense-fg ansi-bold">   1045</span>             "Unverified HTTPS request is being made to host '%s'. "
+<span class="ansi-green-fg">   (...)</span>
+<span class="ansi-green-intense-fg ansi-bold">   1050</span>         InsecureRequestWarning,
+<span class="ansi-green-intense-fg ansi-bold">   1051</span>     )
+
+File <span class="ansi-green-fg">/opt/anaconda3/lib/python3.9/site-packages/urllib3/connection.py:358</span>, in <span class="ansi-cyan-fg">HTTPSConnection.connect</span><span class="ansi-blue-fg">(self)</span>
+<span class="ansi-green-intense-fg ansi-bold">    356</span> def connect(self):
+<span class="ansi-green-intense-fg ansi-bold">    357</span>     # Add certificate verification
+<span class="ansi-green-fg">--&gt; 358</span>     self.sock = conn = self._new_conn()
+<span class="ansi-green-intense-fg ansi-bold">    359</span>     hostname = self.host
+<span class="ansi-green-intense-fg ansi-bold">    360</span>     tls_in_tls = False
+
+File <span class="ansi-green-fg">/opt/anaconda3/lib/python3.9/site-packages/urllib3/connection.py:174</span>, in <span class="ansi-cyan-fg">HTTPConnection._new_conn</span><span class="ansi-blue-fg">(self)</span>
+<span class="ansi-green-intense-fg ansi-bold">    171</span>     extra_kw["socket_options"] = self.socket_options
+<span class="ansi-green-intense-fg ansi-bold">    173</span> try:
+<span class="ansi-green-fg">--&gt; 174</span>     conn = connection.create_connection(
+<span class="ansi-green-intense-fg ansi-bold">    175</span>         (self._dns_host, self.port), self.timeout, **extra_kw
+<span class="ansi-green-intense-fg ansi-bold">    176</span>     )
+<span class="ansi-green-intense-fg ansi-bold">    178</span> except SocketTimeout:
+<span class="ansi-green-intense-fg ansi-bold">    179</span>     raise ConnectTimeoutError(
+<span class="ansi-green-intense-fg ansi-bold">    180</span>         self,
+<span class="ansi-green-intense-fg ansi-bold">    181</span>         "Connection to %s timed out. (connect timeout=%s)"
+<span class="ansi-green-intense-fg ansi-bold">    182</span>         % (self.host, self.timeout),
+<span class="ansi-green-intense-fg ansi-bold">    183</span>     )
+
+File <span class="ansi-green-fg">/opt/anaconda3/lib/python3.9/site-packages/urllib3/util/connection.py:85</span>, in <span class="ansi-cyan-fg">create_connection</span><span class="ansi-blue-fg">(address, timeout, source_address, socket_options)</span>
+<span class="ansi-green-intense-fg ansi-bold">     83</span>     if source_address:
+<span class="ansi-green-intense-fg ansi-bold">     84</span>         sock.bind(source_address)
+<span class="ansi-green-fg">---&gt; 85</span>     sock.connect(sa)
+<span class="ansi-green-intense-fg ansi-bold">     86</span>     return sock
+<span class="ansi-green-intense-fg ansi-bold">     88</span> except socket.error as e:
+
+<span class="ansi-red-fg">KeyboardInterrupt</span>: </pre>
+</div>
+</div>
+
 </div>
 </div>
 
