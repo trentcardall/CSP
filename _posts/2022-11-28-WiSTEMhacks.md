@@ -3,7 +3,7 @@ toc: true
 layout: post
 description: Homework
 categories: [markdown, hacks]
-title: Hacks From 1st Student Lesson
+title: 3.1-2 Hacks
 ---
 ## 3.1 Video 2:
 I did not get any questions wrong, but some of them took me longer than others, especially since I was doing it all in my head. It is hard to keep track of variables, so maybe actually writing down what the variables change to might make it easier. I did learn that it is important to keep track of variables being rearranged and reassigned to make sure that code is working as intended.
