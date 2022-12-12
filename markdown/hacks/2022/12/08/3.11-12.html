@@ -101,7 +101,13 @@ window.onload = wrap_img;
     <ul id="toc" class="section-nav">
 <li class="toc-entry toc-h2"><a href="#overall-takeaways">Overall Takeaways</a></li>
 <li class="toc-entry toc-h2"><a href="#prompt-1-hackathon-i-did-this-one-for-my-group">Prompt #1 (hackathon, I did this one for my group)</a></li>
-<li class="toc-entry toc-h2"><a href="#hacks">Hacks</a></li>
+<li class="toc-entry toc-h2"><a href="#hacks">Hacks</a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#312-part-1">3.12 Part 1</a></li>
+<li class="toc-entry toc-h3"><a href="#312-part-2">3.12 Part 2:</a></li>
+<li class="toc-entry toc-h3"><a href="#313">3.13</a></li>
+</ul>
+</li>
 </ul><h2 id="overall-takeaways">
 <a class="anchor" href="#overall-takeaways" aria-hidden="true"><span class="octicon octicon-link"></span></a>Overall Takeaways</h2>
 <ul>
@@ -139,6 +145,123 @@ window.onload = wrap_img;
 
 <h2 id="hacks">
 <a class="anchor" href="#hacks" aria-hidden="true"><span class="octicon octicon-link"></span></a>Hacks</h2>
+<h3 id="312-part-1">
+<a class="anchor" href="#312-part-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>3.12 Part 1</h3>
+<p><strong>Problem 1:</strong>
+Total Time/Total Distance ​</p>
+
+<ul>
+  <li>Highlight which of these is the best procedure for calculating and displaying average speed.
+    <ul>
+      <li>PROCEDURE calcAvgSpeed (distance, time) { DISPLAY (distance/time) }</li>
+      <li>PROCEDURE calcAvgSpeed (distance) { DISPLAY (distance/time) }</li>
+      <li>==PROCEDURE calcAvgSpeed (distance, time) { DISPLAY (time/distance) }==</li>
+    </ul>
+  </li>
+</ul>
+
+<p><strong>Problem 2:</strong>
+I think it’s true that nothing will be displayed as the procedure never tells anything to be displayed. If it said DISPLAY (myEmotion) then something would be displayed</p>
+
+<p><strong>Problem 3:</strong>
+Which of these code snippets successfully calculates and stores her total footprint? Highlight 2 answers.</p>
+
+<ol>
+  <li>
+    <p>==totalFootprint ← calcFlightFootprint(2451, 118) + calcFlightFootprint(3442, 252)==</p>
+  </li>
+  <li>
+    <p>totalFootprint ← calcFlightFootprint(2451, 118 + 3442, 252)</p>
+  </li>
+  <li>
+    <p>==totalFootprint ← calcFlightFootprint((2451, 118) + (3442, 252))==</p>
+  </li>
+  <li>
+    <p>laNyCarbon ← calcFlightFootprint(2451, 118) nyLondonCarbon ← calcFlightFootprint(3442, 252) totalFootprint ← laNyCarbon + nyLondonCarbon</p>
+  </li>
+</ol>
+
+<h3 id="312-part-2">
+<a class="anchor" href="#312-part-2" aria-hidden="true"><span class="octicon octicon-link"></span></a>3.12 Part 2:</h3>
+<ol>
+  <li>
+    <p>a = 9*81 = 729</p>
+  </li>
+  <li>
+    <p>cost = 1.1*173 = 190 3/10</p>
+  </li>
+  <li>
+    <p>Celsius = 71*5/9 = 39 4/9</p>
+  </li>
+</ol>
+
+<h3 id="313">
+<a class="anchor" href="#313" aria-hidden="true"><span class="octicon octicon-link"></span></a>3.13</h3>
+<ol>
+  <li>
+    <ul>
+      <li>PROCEDURE replaceRB (toprbyardspg, currentrbyards, totalGames)</li>
+    </ul>
+    <ul>
+      <li>currentrbyardspg ⟵ currentrbyards / totalGames</li>
+      <li>IF currentrbyardpg &gt; toprbyardspg
+        <ul>
+          <li>toprbyardspg⟵currentrbyards</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ol>
+
+<p>If we were to run this procedure with the numbers listed, toprbyardspg would become 105, as that is the currentrbyardspg</p>
+
+<ol>
+  <li>PROCEDURE reachGoal():
+    <ul>
+      <li>ROTATE_RIGHT()</li>
+      <li>MOVE_FORWARD()</li>
+      <li>ROTATE_LEFT()</li>
+      <li>MOVE_FORWARD()</li>
+      <li>MOVE_FORWARD()</li>
+      <li>ROTATE_RIGHT()</li>
+      <li>MOVE_FORWARD()</li>
+      <li>MOVE_FORWARD()</li>
+      <li>MOVE_FORWARD()</li>
+      <li>MOVE_FORWARD()</li>
+      <li>ROTATE_LEFT()</li>
+      <li>MOVE_FORWARD()</li>
+      <li>MOVE_FORWARD()</li>
+      <li>ROTATE_LEFT()</li>
+      <li>MOVE_FORWARD()</li>
+      <li>MOVE_FORWARD()</li>
+      <li>ROTATE_RIGHT()</li>
+      <li>MOVE_FORWARD()</li>
+      <li>ROTATE_LEFT()</li>
+      <li>MOVE_FORWARD()</li>
+      <li>MOVE_FORWARD()</li>
+    </ul>
+  </li>
+  <li>
+    <p>b. PROCEDURE MyList is correct because “procedure” is capitalized but the name of it isn’t</p>
+  </li>
+  <li>PROCEDURE reachGoal():
+    <ul>
+      <li>MOVE_FORWARD()</li>
+      <li>ROTATE_LEFT()</li>
+      <li>MOVE_FORWARD()</li>
+      <li>ROTATE_RIGHT()</li>
+      <li>MOVE_FORWARD()</li>
+      <li>MOVE_FORWARD()</li>
+      <li>MOVE_FORWARD()</li>
+      <li>MOVE_FORWARD()</li>
+      <li>MOVE_FORWARD()</li>
+      <li>ROTATE_LEFT()</li>
+      <li>MOVE_FORWARD()</li>
+      <li>MOVE_FORWARD()</li>
+    </ul>
+  </li>
+</ol>
+
 
   </div><a class="u-url" href="/cuddly-succotash/markdown/hacks/2022/12/08/3.11-12.html" hidden></a>
 </article>
