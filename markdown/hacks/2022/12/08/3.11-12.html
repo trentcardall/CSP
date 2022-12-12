@@ -155,7 +155,7 @@ Total Time/Total Distance ​</p>
     <ul>
       <li>PROCEDURE calcAvgSpeed (distance, time) { DISPLAY (distance/time) }</li>
       <li>PROCEDURE calcAvgSpeed (distance) { DISPLAY (distance/time) }</li>
-      <li>==PROCEDURE calcAvgSpeed (distance, time) { DISPLAY (time/distance) }==</li>
+      <li><mark>PROCEDURE calcAvgSpeed (distance, time) { DISPLAY (time/distance) }</mark></li>
     </ul>
   </li>
 </ul>
@@ -168,13 +168,13 @@ Which of these code snippets successfully calculates and stores her total footpr
 
 <ol>
   <li>
-    <p>==totalFootprint ← calcFlightFootprint(2451, 118) + calcFlightFootprint(3442, 252)==</p>
+    <p><mark>totalFootprint ← calcFlightFootprint(2451, 118) + calcFlightFootprint(3442, 252)</mark></p>
   </li>
   <li>
     <p>totalFootprint ← calcFlightFootprint(2451, 118 + 3442, 252)</p>
   </li>
   <li>
-    <p>==totalFootprint ← calcFlightFootprint((2451, 118) + (3442, 252))==</p>
+    <p><mark>totalFootprint ← calcFlightFootprint((2451, 118) + (3442, 252))</mark></p>
   </li>
   <li>
     <p>laNyCarbon ← calcFlightFootprint(2451, 118) nyLondonCarbon ← calcFlightFootprint(3442, 252) totalFootprint ← laNyCarbon + nyLondonCarbon</p>
