@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      1 min read
+      3 min read
     
 </span></p>
 
@@ -99,7 +99,18 @@ window.onload = wrap_img;
 
   <div class="post-content e-content" itemprop="articleBody">
     <ul id="toc" class="section-nav">
-<li class="toc-entry toc-h2"><a href="#notes-and-takeaways">Notes and Takeaways</a></li>
+<li class="toc-entry toc-h2"><a href="#notes-and-takeaways">Notes and Takeaways</a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#reflection">Reflection</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h2"><a href="#multiple-choice">Multiple Choice</a></li>
+<li class="toc-entry toc-h2"><a href="#short-answer-questions">Short Answer Questions</a></li>
+<li class="toc-entry toc-h2"><a href="#coding-challenges">Coding Challenges</a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#extra-credit">Extra Credit</a></li>
+</ul>
+</li>
 </ul><h2 id="notes-and-takeaways">
 <a class="anchor" href="#notes-and-takeaways" aria-hidden="true"><span class="octicon octicon-link"></span></a>Notes and Takeaways</h2>
 <ul>
@@ -120,6 +131,111 @@ window.onload = wrap_img;
   </li>
   <li>Overall, utilizing libraries such as the random one can make it much easier to code and allow you do more things than you normally would with your code</li>
 </ul>
+
+<h3 id="reflection">
+<a class="anchor" href="#reflection" aria-hidden="true"><span class="octicon octicon-link"></span></a>Reflection</h3>
+<p>I learned the importance of libraries and how to use them, specifically the random function, which you can do a lot more stuff with than I realized. I know there is a lot more libraries which have a lot more functions, and I plan on researching some of them so that I can do a lot more with my code while still keeping it relatively simple.</p>
+
+<h2 id="multiple-choice">
+<a class="anchor" href="#multiple-choice" aria-hidden="true"><span class="octicon octicon-link"></span></a>Multiple Choice</h2>
+
+<ol>
+  <li>
+    <p>What does the random(a,b) function generate?
+ A. A random integer from a to be exclusive</p>
+
+    <p>B. <mark>A random integer from a to b inclusive.</mark></p>
+
+    <p>C. A random word from variable a to variable b exclusive.</p>
+
+    <p>D. A random word from variable a to variable b inclusive.</p>
+  </li>
+</ol>
+
+<p>I chose B because it includes the integers listed and it is not in reference to variables. a and b are just place holders for integers you would put on the list</p>
+
+<ol>
+  <li>
+    <p>What is x, y, and z in random.randrange(x, y, z)?
+ A. <mark>x = start, y = stop, z = step</mark></p>
+
+    <p>B. x = start, y = step, z = stop</p>
+
+    <p>C. x = stop, y = start, z = step</p>
+
+    <p>D. x = step, y = start, z = stop</p>
+  </li>
+</ol>
+
+<p>I chose A because x and y reference the start and stop of the range you want to pull from and z is the step, or the number you are adding by</p>
+
+<ol>
+  <li>
+    <p>Which of the following is NOT part of the random library?
+ A. random.item</p>
+
+    <p>B. <mark>random.random</mark></p>
+
+    <p>C. random.shuffle</p>
+
+    <p>D. random.randint</p>
+  </li>
+</ol>
+
+<p>I chose B because “random.random” doesn’t really make sense and the other ones have actual functions. random.item chooses a random item from a string list, random.shuffle shuffles a list, and random.randint finds a random integer.</p>
+
+<h2 id="short-answer-questions">
+<a class="anchor" href="#short-answer-questions" aria-hidden="true"><span class="octicon octicon-link"></span></a>Short Answer Questions</h2>
+<ol>
+  <li>What is the advantage of using libraries?
+    <ul>
+      <li>It allows us to import code that as already written/developed and can make it a lot easier to code certain algorithms/procedures, as well as allowing us to a lot more with our code</li>
+    </ul>
+  </li>
+  <li>Write a thorough documentation of the following code.</li>
+</ol>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">random</span> 
+
+<span class="n">names_string</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">"Give me everybody's names, seperated by a comma."</span><span class="p">)</span>
+<span class="n">names</span> <span class="o">=</span> <span class="n">names_string</span><span class="p">.</span><span class="n">split</span><span class="p">(</span><span class="s">","</span><span class="p">)</span>
+
+<span class="n">num_items</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">names</span><span class="p">)</span>
+
+<span class="n">random_choice</span> <span class="o">=</span> <span class="n">random</span><span class="p">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">num_items</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>
+
+<span class="n">person_who_will_pay</span> <span class="o">=</span> <span class="n">names</span><span class="p">[</span><span class="n">random_choice</span><span class="p">]</span>
+
+<span class="k">print</span><span class="p">(</span><span class="sa">f</span><span class="s">"</span><span class="si">{</span><span class="n">person_who_will_pay</span><span class="si">}</span><span class="s"> is going to buy the meal today!"</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>Documentation: This code builds a list of names based on the user input and then chooses a random name from the list to decide who is going to pay for the meal.</p>
+
+<h2 id="coding-challenges">
+<a class="anchor" href="#coding-challenges" aria-hidden="true"><span class="octicon octicon-link"></span></a>Coding Challenges</h2>
+<p>Jupyter notebooks aren’t working with fastpages so I’m just going to show screenshots of my code/outputs</p>
+
+<ol>
+  <li>Create a program to pick five random names from a list of at least 15 names</li>
+</ol>
+
+<p><img src="/cuddly-succotash/images/challenge1.png" alt=""></p>
+
+<ol>
+  <li>Create a program to simulate a dice game where each player rolls two fair dice (6 sides); the player with the greater sum wins</li>
+</ol>
+
+<p><img src="/cuddly-succotash/images/challenge2.png" alt=""></p>
+
+<h3 id="extra-credit">
+<a class="anchor" href="#extra-credit" aria-hidden="true"><span class="octicon octicon-link"></span></a>Extra Credit</h3>
+<p>I tried my best, but I wasn’t sure how to make it completely mutually exclusive so if an obstacle complicated with something else than I just got rid of that obstacle</p>
+
+<p><img src="/cuddly-succotash/images/extracreditcode.png" alt="">
+<img src="/cuddly-succotash/images/extracreditoutput.png" alt=""></p>
+
+<p>Here’s my illustration using the numbers generated from the code:
+<img src="/cuddly-succotash/images/extracreditresult.png" alt=""></p>
 
   </div><a class="u-url" href="/cuddly-succotash/markdown/hacks/2022/12/12/3.14-15.html" hidden></a>
 </article>
