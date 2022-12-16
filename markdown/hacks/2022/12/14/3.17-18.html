@@ -330,18 +330,18 @@ window.onload = wrap_img;
 
 <p>I wrote a simpler permutation algorithm</p>
 
-<p>```python
-def permute(data):
-  if len(data) == 0:
-    yield []
-  else:
-    for i in range(len(data)):
-      for permutation in permute(data[:i] + data[i+1:]):
-        yield [data[i]] + permutation</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">permute</span><span class="p">(</span><span class="n">data</span><span class="p">):</span>
+  <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">data</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+    <span class="k">yield</span> <span class="p">[]</span>
+  <span class="k">else</span><span class="p">:</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">data</span><span class="p">)):</span>
+      <span class="k">for</span> <span class="n">permutation</span> <span class="ow">in</span> <span class="n">permute</span><span class="p">(</span><span class="n">data</span><span class="p">[:</span><span class="n">i</span><span class="p">]</span> <span class="o">+</span> <span class="n">data</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">:]):</span>
+        <span class="k">yield</span> <span class="p">[</span><span class="n">data</span><span class="p">[</span><span class="n">i</span><span class="p">]]</span> <span class="o">+</span> <span class="n">permutation</span>
 
-<p>data = [1, 2, 3]
-for permutation in permute(data)
-    print(permutation)</p>
+<span class="n">data</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
+<span class="k">for</span> <span class="n">permutation</span> <span class="ow">in</span> <span class="n">permute</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">permutation</span><span class="p">)</span>
+</code></pre></div></div>
 
   </div><a class="u-url" href="/cuddly-succotash/markdown/hacks/2022/12/14/3.17-18.html" hidden></a>
 </article>
