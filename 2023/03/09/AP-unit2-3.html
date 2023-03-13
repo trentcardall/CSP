@@ -251,6 +251,7 @@ window.onload = wrap_img;
 
 <span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
 <span class="c1"># What part of the data set needs to be cleaned?</span>
+<span class="c1"># Row 9 is missing a student ID, and the year in school is written differently for some students ("Junior" and "9th Grade")</span>
 <span class="c1"># From PBL learning, what is a good time to clean data?  Hint, remember Garbage in, Garbage out?</span>
 </pre></div>
 
@@ -388,7 +389,7 @@ Student ID  GPA
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="p">[</span><span class="s1">'GPA'</span><span class="p">]))</span>
 
 <span class="nb">print</span><span class="p">()</span>
-
+<span class="c1"># this cell is listing students in order of GPA</span>
 <span class="c1">#sort the values in reverse order</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="p">[</span><span class="s1">'GPA'</span><span class="p">],</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">))</span>
 </pre></div>
@@ -578,6 +579,8 @@ Student ID  GPA
 <span class="c1">#or with the index argument, you can label rows.</span>
 <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="nb">dict</span><span class="p">,</span> <span class="n">index</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"day1"</span><span class="p">,</span> <span class="s2">"day2"</span><span class="p">,</span> <span class="s2">"day3"</span><span class="p">,</span> <span class="s2">"day4"</span><span class="p">])</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
+
+<span class="c1"># this section you can make your own dictionaries and use pandas on it. It doesn't have to be from large files of data</span>
 </pre></div>
 
     </div>
@@ -742,6 +745,8 @@ None
 
 <span class="nb">print</span><span class="p">(</span><span class="s2">"--Duration Bottom 10------"</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">tail</span><span class="p">(</span><span class="mi">10</span><span class="p">))</span>
+
+<span class="c1"># this makes a lot easier to analyze spreadsheets and large files of data</span>
 </pre></div>
 
     </div>
@@ -827,6 +832,8 @@ None
     <span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">5</span><span class="p">,</span> <span class="s1">'country_name'</span><span class="p">:</span><span class="s1">'deaths'</span><span class="p">])</span> <span class="c1"># show row 0 through 5 and columns country_name through deaths</span>
     
 <span class="n">fetch</span><span class="p">()</span>
+
+<span class="c1"># obtaining and analyzing data from API can also be very useful</span>
 </pre></div>
 
     </div>
