@@ -1,0 +1,86 @@
+<style>
+    .container {
+	    display: flex;
+	    flex-direction: column;
+	    align-items: center;
+	    margin-top: 50px;
+    }
+
+    h1 {
+	    font-size: 3rem;
+	    margin-bottom: 20px;
+	    color: #007bff;
+    }
+
+    .dice {
+	    display: flex;
+	    justify-content: center;
+	    align-items: center;
+	    width: 150px;
+	    height: 150px;
+	    border: 2px solid #6c757d;
+	    border-radius: 10px;
+	    margin-bottom: 20px;
+	    font-size: 4rem;
+    }
+
+    .dot {
+	    display: inline-block;
+	    width: 50px;
+	    height: 50px;
+	    border-radius: 50%;
+	    background-color: #6c757d;
+	    color: #fff;
+	    text-align: center;
+	    line-height: 50px;
+	    margin: 10px;
+    }
+
+    button {
+	    display: inline-block;
+	    padding: 10px 20px;
+	    font-size: 16px;
+	    color: #fff;
+	    background-color: #007bff;
+	    border: none;
+	    border-radius: 5px;
+	    cursor: pointer;
+    }
+
+    button:hover {
+	    background-color: #6c757d;
+    }
+</style>
+
+<html>
+<head>
+	<title>Dice Roll</title>
+</head>
+<body>
+	<div class="container">
+		<h1>Dice Roll Simulator</h1>
+		<div class="dice">
+			<span id="dice1" class="dot"></span>
+			<span id="dice2" class="dot"></span>
+		</div>
+		<button id="roll-btn" onclick="rollDice()">Roll Dice</button>
+	</div>
+</body>
+</html>
+
+<script>
+function rollDice() {
+	// Get the dice elements
+	var dice1 = document.getElementById("dice1");
+	var dice2 = document.getElementById("dice2");
+
+	// Generate random numbers for the dice rolls
+	var num1 = Math.floor(Math.random() * 6) + 1;
+	var num2 = Math.floor(Math.random() * 6) + 1;
+
+	// Set the dots on the dice elements to match the random numbers
+	dice1.className = "dot dot-" + num1;
+	dice2.className = "dot dot-" + num2;
+}
+</script>
+
