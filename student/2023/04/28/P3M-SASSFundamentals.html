@@ -82,7 +82,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      17 min read
+      18 min read
     
 </span></p>
 
@@ -163,6 +163,8 @@ window.onload = wrap_img;
 <ul>
 <li class="toc-entry toc-h2"><a href="#Part-1:-Reflections-0.4-Points">Part 1: Reflections 0.4 Points </a></li>
 <li class="toc-entry toc-h2"><a href="#Part-2:-Sass-Demo-0.5+-Points">Part 2: Sass Demo 0.5+ Points </a></li>
+<li class="toc-entry toc-h2"><a href="#Part-1">Part 1 </a></li>
+<li class="toc-entry toc-h2"><a href="#Part-2">Part 2 </a></li>
 </ul>
 </li>
 </ul><!--
@@ -1178,13 +1180,7 @@ Fun Fact: Variables in SASS came before CSS and often SASS has features long bef
 <a class="anchor" href="#Part-1:-Reflections-0.4-Points" aria-hidden="true"><span class="octicon octicon-link"></span></a>Part 1: Reflections 0.4 Points<a class="anchor-link" href="#Part-1:-Reflections-0.4-Points"> </a>
 </h2>
 <ul>
-<li>
-<p>Write a short description of each key feature of Sass and compare it to how it to CSS and how using Sass makes your life easier when using all the features. Include examples of how it would have made prior features from past projects simpler to implement. Also answer the questions indicated as hack questions.</p>
-</li>
-<li>
-<p>Mixins are like pre-made sets of CSS rules that you can use over and over again in your code. Instead of writing out the same CSS code multiple times, you can create a mixin once and use it wherever you need it.</p>
-</li>
-<li>Inheritance is when you create a parent-child relationship between two CSS selectors. Whatever styles are defined in the parent selector are inherited by the child selector. This can help you write less code and make your CSS more organized.</li>
+<li>Write a short description of each key feature of Sass and compare it to how it to CSS and how using Sass makes your life easier when using all the features. Include examples of how it would have made prior features from past projects simpler to implement. Also answer the questions indicated as hack questions.</li>
 </ul>
 <h2 id="Part-2:-Sass-Demo-0.5+-Points">
 <a class="anchor" href="#Part-2:-Sass-Demo-0.5+-Points" aria-hidden="true"><span class="octicon octicon-link"></span></a>Part 2: Sass Demo 0.5+ Points<a class="anchor-link" href="#Part-2:-Sass-Demo-0.5+-Points"> </a>
@@ -1197,6 +1193,92 @@ Fun Fact: Variables in SASS came before CSS and often SASS has features long bef
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Part-1">
+<a class="anchor" href="#Part-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>Part 1<a class="anchor-link" href="#Part-1"> </a>
+</h2>
+<ul>
+<li>Variables: Sass allows you to define and use variables to store reusable values such as colors, font sizes, and spacing. This makes it easier to maintain consistency across your stylesheet.</li>
+<li>Nesting: Sass allows you to nest your CSS rules inside other rules, which makes it easier to write and read your code. This feature also allows you to target specific elements more easily.</li>
+<li>Mixins: Sass provides mixins, which are reusable pieces of code that can be included in different parts of your stylesheet. Mixins allow you to define complex styles once and use them throughout your codebase.</li>
+<li>Inheritance: Sass allows you to use inheritance to create a hierarchy of styles. This makes it easier to maintain consistency across your codebase and reduces the amount of code you need to write.</li>
+<li>Operators: Sass provides operators such as +, -, *, /, and %. These operators can be used to perform calculations on values, which makes it easier to create responsive designs.</li>
+<li>Functions: Sass provides functions that allow you to manipulate values, such as converting between units or performing color operations. Functions can be used to simplify your code and make it more efficient.</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Part-2">
+<a class="anchor" href="#Part-2" aria-hidden="true"><span class="octicon octicon-link"></span></a>Part 2<a class="anchor-link" href="#Part-2"> </a>
+</h2>
+<ul>
+<li>Here is an example of an SCSS file which uses variables, mixins, functions, and operators.</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-python"><pre><span></span><span class="err">$</span><span class="n">primary</span><span class="o">-</span><span class="n">color</span><span class="p">:</span> <span class="c1">#007bff;</span>
+<span class="err">$</span><span class="n">secondary</span><span class="o">-</span><span class="n">color</span><span class="p">:</span> <span class="c1">#6c757d;</span>
+<span class="err">$</span><span class="n">font</span><span class="o">-</span><span class="n">size</span><span class="o">-</span><span class="n">base</span><span class="p">:</span> <span class="mi">16</span><span class="n">px</span><span class="p">;</span>
+<span class="err">$</span><span class="n">padding</span><span class="o">-</span><span class="n">base</span><span class="p">:</span> <span class="mi">1</span><span class="n">rem</span><span class="p">;</span>
+
+
+<span class="nd">@mixin</span> <span class="n">card</span><span class="o">-</span><span class="n">style</span> <span class="p">{</span>
+  <span class="n">border</span><span class="p">:</span> <span class="mi">1</span><span class="n">px</span> <span class="n">solid</span> <span class="err">$</span><span class="n">secondary</span><span class="o">-</span><span class="n">color</span><span class="p">;</span>
+  <span class="n">padding</span><span class="p">:</span> <span class="err">$</span><span class="n">padding</span><span class="o">-</span><span class="n">base</span><span class="p">;</span>
+  <span class="n">border</span><span class="o">-</span><span class="n">radius</span><span class="p">:</span> <span class="mi">4</span><span class="n">px</span><span class="p">;</span>
+<span class="p">}</span>
+
+
+<span class="o">.</span><span class="n">card</span> <span class="p">{</span>
+  <span class="nd">@include</span> <span class="n">card</span><span class="o">-</span><span class="n">style</span><span class="p">;</span>
+  <span class="n">background</span><span class="o">-</span><span class="n">color</span><span class="p">:</span> <span class="c1">#fff;</span>
+  <span class="n">font</span><span class="o">-</span><span class="n">size</span><span class="p">:</span> <span class="err">$</span><span class="n">font</span><span class="o">-</span><span class="n">size</span><span class="o">-</span><span class="n">base</span><span class="p">;</span>
+
+  <span class="n">h2</span> <span class="p">{</span>
+    <span class="n">color</span><span class="p">:</span> <span class="err">$</span><span class="n">primary</span><span class="o">-</span><span class="n">color</span><span class="p">;</span>
+    <span class="n">font</span><span class="o">-</span><span class="n">size</span><span class="p">:</span> <span class="err">$</span><span class="n">font</span><span class="o">-</span><span class="n">size</span><span class="o">-</span><span class="n">base</span> <span class="o">*</span> <span class="mf">1.5</span><span class="p">;</span>
+    <span class="n">margin</span><span class="o">-</span><span class="n">bottom</span><span class="p">:</span> <span class="err">$</span><span class="n">padding</span><span class="o">-</span><span class="n">base</span><span class="p">;</span>
+  <span class="p">}</span>
+
+  <span class="n">p</span> <span class="p">{</span>
+    <span class="n">color</span><span class="p">:</span> <span class="err">$</span><span class="n">secondary</span><span class="o">-</span><span class="n">color</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+
+<span class="nd">@function</span> <span class="n">px</span><span class="o">-</span><span class="n">to</span><span class="o">-</span><span class="n">rem</span><span class="p">(</span><span class="err">$</span><span class="n">px</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nd">@return</span> <span class="p">(</span><span class="err">$</span><span class="n">px</span> <span class="o">/</span> <span class="err">$</span><span class="n">font</span><span class="o">-</span><span class="n">size</span><span class="o">-</span><span class="n">base</span><span class="p">)</span> <span class="o">*</span> <span class="mi">1</span><span class="n">rem</span><span class="p">;</span>
+<span class="p">}</span>
+
+
+<span class="o">.</span><span class="n">container</span> <span class="p">{</span>
+  <span class="nb">max</span><span class="o">-</span><span class="n">width</span><span class="p">:</span> <span class="n">px</span><span class="o">-</span><span class="n">to</span><span class="o">-</span><span class="n">rem</span><span class="p">(</span><span class="mi">1200</span><span class="n">px</span><span class="p">);</span>
+  <span class="n">margin</span><span class="p">:</span> <span class="mi">0</span> <span class="n">auto</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
 </div>
 
 
