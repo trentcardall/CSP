@@ -81,7 +81,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      6 min read
+      9 min read
     
 </span></p>
 
@@ -121,15 +121,15 @@ window.onload = wrap_img;
 
 <p>Define or describe usage of Computer using Computer Programs. Pictures are preferred over a lot of text.  Use your experience.</p>
 <ul>
-  <li>Input devices</li>
-  <li>Output devices</li>
-  <li>Program File</li>
-  <li>Program Code</li>
-  <li>Processes</li>
-  <li>Ports</li>
-  <li>Data File</li>
-  <li>Inspect Running Code</li>
-  <li>Inspect Variables</li>
+  <li>Input devices: Devices used by people to input data into a computer/program. Examples include keyboard and mouse</li>
+  <li>Output devices: Devices used to display and output data from a computer, such as the computer monitor or speakers.</li>
+  <li>Program File: A file that contains code/instructions for the computer to execute</li>
+  <li>Program Code: A set of instructions written a specific language which a computer understands and can execute. The backbone of any computer program.</li>
+  <li>Processes: Tasks currently running on a computer’s operating system, using its own memory space and resources. These can be viewed using Activity Monitor or the top command</li>
+  <li>Ports: Points of communication between computer and external devices and networks, allowing data to be transferred in and out of a computer. We use these in deployment (AWS) and when also running a local server.</li>
+  <li>Data File: Data that program can read an access, such as a text file, image file, or database. (Ex: sqlite.db)</li>
+  <li>Inspect Running Code: Viewing the current state of the program while it is running, such as the current values of variables or the source code being executed.</li>
+  <li>Inspect Variables: Ability to view current values of variables as the program is running. Useful for debugging and understanding how the program works.</li>
 </ul>
 
 <p><img src="/cuddly-succotash/images/cpu.jpeg" alt="Computer Hardware"></p>
@@ -155,12 +155,12 @@ window.onload = wrap_img;
   </li>
   <li>Complete Vocabulary Matching Activity.  Incorporate this into your learnings from year.  To analyze measure path and latency use <code class="language-plaintext highlighter-rouge">traceroute</code> and <code class="language-plaintext highlighter-rouge">ping</code> commands from Linux Terminal.
     <ul>
-      <li>Path</li>
-      <li>Route</li>
-      <li>Computer System</li>
-      <li>Computer Device</li>
-      <li>Bandwidth</li>
-      <li>Computer Network</li>
+      <li>Path: The route or sequence of nodes (such as routers) that data packets take from one device to another on a computer network.</li>
+      <li>Route: The path that data packets take from one device to another on a computer network, typically consisting of multiple hops through different routers.</li>
+      <li>Computer System: A combination of hardware and software that performs specific functions, such as running applications or managing data.</li>
+      <li>Computer Device: A physical device that can be connected to a computer system and performs a specific function, such as a keyboard, mouse, or printer.</li>
+      <li>Bandwidth: The amount of data that can be transmitted over a computer network in a given period of time, usually measured in bits per second (bps), kilobits per second (Kbps), or megabits per second (Mbps).</li>
+      <li>Computer Network: A collection of interconnected computer systems and devices that can communicate with each other and share resources, such as data, applications, and devices.</li>
     </ul>
   </li>
 </ul>
@@ -194,7 +194,7 @@ window.onload = wrap_img;
   <li>Go over AP videos, vocabulary, and essential knowledge.  Draw a diagram showing the internet and its many levels. A preferred diagram would using your knowledge of frontend, backend, deployment, etc.  Picture would highligh vocabulary by illustration. The below illustration have some ideas</li>
 </ul>
 
-<p><img src="/cuddly-succotash/images/fullstack.png" alt="Full Stack"></p>
+<p><img src="/cuddly-succotash/images/info.png" alt="F"></p>
 
 <ul>
   <li>Often we draw pictures of machines communicating over the Internet with arrows.  However, the real communication goes through protocol layers and the machine and then is trasported of the network.   For College Board and future Computer Knowledge you should become familiar with the following …</li>
@@ -229,7 +229,11 @@ window.onload = wrap_img;
 </blockquote>
 
 <ul>
-  <li>Complete the network activity, summarize your understanding of fault tolerance.</li>
+  <li>Complete the network activity, summarize your understanding of fault tolerance.
+    <ul>
+      <li>Fault tolerance is when systems can continue to function even after failures and errors occur, even unexpected ones.</li>
+    </ul>
+  </li>
 </ul>
 
 <h3 id="parallel-and-distributed-computing">
@@ -239,11 +243,15 @@ window.onload = wrap_img;
 </blockquote>
 
 <ul>
-  <li>
-    <p>What is naturally Distributed in Frontend/Backend archeticture?</p>
+  <li>What is naturally Distributed in Frontend/Backend archeticture?
+    <ul>
+      <li>The data is stored and actually updated in the backend but frontend displays and requests changes to be made to the backend. Both run their own processes but work together to create a single functioning product.</li>
+    </ul>
   </li>
-  <li>
-    <p>Analyze this command in Docker: <code class="language-plaintext highlighter-rouge">ENV GUNICORN_CMD_ARGS="--workers=1 --bind=0.0.0.0:8086"</code>.   Determine if there is options are options in this command for parallel computing within the server that runs python/gunicorn.  Here is an <a href="https://medium.com/building-the-system/gunicorn-3-means-of-concurrency-efbb547674b7">article</a></p>
+  <li>Analyze this command in Docker: <code class="language-plaintext highlighter-rouge">ENV GUNICORN_CMD_ARGS="--workers=1 --bind=0.0.0.0:8086"</code>.   Determine if there is options are options in this command for parallel computing within the server that runs python/gunicorn.  Here is an <a href="https://medium.com/building-the-system/gunicorn-3-means-of-concurrency-efbb547674b7">article</a>
+    <ul>
+      <li>You can add more workers to invoke parallel computing. You can also add more threads which distributes the work a single worker does.</li>
+    </ul>
   </li>
 </ul>
 
