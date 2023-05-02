@@ -24,15 +24,15 @@ List specification of your Computer, or Computers if working as Pair/Trio
 - OS: macOS Catalina
 
 Define or describe usage of Computer using Computer Programs. Pictures are preferred over a lot of text.  Use your experience.
-- Input devices
-- Output devices
-- Program File
-- Program Code
-- Processes
-- Ports
-- Data File
-- Inspect Running Code
-- Inspect Variables
+- Input devices: Devices used by people to input data into a computer/program. Examples include keyboard and mouse
+- Output devices: Devices used to display and output data from a computer, such as the computer monitor or speakers.
+- Program File: A file that contains code/instructions for the computer to execute
+- Program Code: A set of instructions written a specific language which a computer understands and can execute. The backbone of any computer program.
+- Processes: Tasks currently running on a computer's operating system, using its own memory space and resources. These can be viewed using Activity Monitor or the top command
+- Ports: Points of communication between computer and external devices and networks, allowing data to be transferred in and out of a computer. We use these in deployment (AWS) and when also running a local server.
+- Data File: Data that program can read an access, such as a text file, image file, or database. (Ex: sqlite.db)
+- Inspect Running Code: Viewing the current state of the program while it is running, such as the current values of variables or the source code being executed.
+- Inspect Variables: Ability to view current values of variables as the program is running. Useful for debugging and understanding how the program works.
 
 
 ![Computer Hardware]({{site.baseurl}}/images/cpu.jpeg)
@@ -52,12 +52,12 @@ Define or describe usage of Computer using Computer Programs. Pictures are prefe
     - Bandwidth is usually measured in bits per second
 
 - Complete Vocabulary Matching Activity.  Incorporate this into your learnings from year.  To analyze measure path and latency use `traceroute` and `ping` commands from Linux Terminal.  
-    - Path 
-    - Route
-    - Computer System
-    - Computer Device
-    - Bandwidth
-    - Computer Network
+    - Path: The route or sequence of nodes (such as routers) that data packets take from one device to another on a computer network.
+    - Route: The path that data packets take from one device to another on a computer network, typically consisting of multiple hops through different routers.
+    - Computer System: A combination of hardware and software that performs specific functions, such as running applications or managing data.
+    - Computer Device: A physical device that can be connected to a computer system and performs a specific function, such as a keyboard, mouse, or printer.
+    - Bandwidth: The amount of data that can be transmitted over a computer network in a given period of time, usually measured in bits per second (bps), kilobits per second (Kbps), or megabits per second (Mbps).
+    - Computer Network: A collection of interconnected computer systems and devices that can communicate with each other and share resources, such as data, applications, and devices.
 
 > Watch/review College Board Daily Video 4.1.2
 
@@ -81,7 +81,7 @@ Define or describe usage of Computer using Computer Programs. Pictures are prefe
 
 - Go over AP videos, vocabulary, and essential knowledge.  Draw a diagram showing the internet and its many levels. A preferred diagram would using your knowledge of frontend, backend, deployment, etc.  Picture would highligh vocabulary by illustration. The below illustration have some ideas
 
-![Full Stack]({{site.baseurl}}/images/fullstack.png)
+![F]({{site.baseurl}}/images/info.png)
 
 
 - Often we draw pictures of machines communicating over the Internet with arrows.  However, the real communication goes through protocol layers and the machine and then is trasported of the network.   For College Board and future Computer Knowledge you should become familiar with the following ...
@@ -114,15 +114,16 @@ The "network" layer is responsible for ***routing data packets between networks*
 > Watch both Daily videos for 4.2
 
 - Complete the network activity, summarize your understanding of fault tolerance.
-
+    - Fault tolerance is when systems can continue to function even after failures and errors occur, even unexpected ones.
 
 ### Parallel and Distributed Computing
 > Review previous lecture on Parallel Computing and watch Daily vidoe 4.3.  Think of ways to make something in you team project to utilize Cores more effectively.  Here are some thoughts to add to your story of Computers and Networks...
 
 - What is naturally Distributed in Frontend/Backend archeticture?  
+    - The data is stored and actually updated in the backend but frontend displays and requests changes to be made to the backend. Both run their own processes but work together to create a single functioning product.
 
 - Analyze this command in Docker: ```ENV GUNICORN_CMD_ARGS="--workers=1 --bind=0.0.0.0:8086"```.   Determine if there is options are options in this command for parallel computing within the server that runs python/gunicorn.  Here is an [article](https://medium.com/building-the-system/gunicorn-3-means-of-concurrency-efbb547674b7)
-
+    - You can add more workers to invoke parallel computing. You can also add more threads which distributes the work a single worker does.
 
 > Last week we discussed parallel computing on local machine.  There are many options.  Here is something to get parallel computing work with a tool called Ray.
 - Review this [article](https://www.anyscale.com/blog/writing-your-first-distributed-python-application-with-ray)...  Can you get parallel code on images to work more effectively?  I have not tried Ray.
